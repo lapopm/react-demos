@@ -1,13 +1,17 @@
-import Greeting from "./components/Greeting"
-import ProductInfo from "./components/ProductInfo"
+import Greeting from "./components/Greeting";
+import UserStatus from "./components/UserStatus";
+import Weather from "./components/Weather";
 
 function App() {
   return (
     <div>
-       <Greeting />
-       <ProductInfo />
+      <Weather />
+      <h1>===================</h1>
+      <UserStatus loggedIn={true} isAdmin={false} />
+      <h1>===================</h1>
+      <Greeting timeOfDay="morning" />
     </div>
-)
+  );
 }
 
-export default App
+export default App;

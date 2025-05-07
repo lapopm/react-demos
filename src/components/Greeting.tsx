@@ -1,14 +1,13 @@
-const Greeting = () => {
-  const name = "John";
-  const date = new Date().toString();
-  const isMorning = date.includes("AM") ? "Good Morning" : "Good Evening";
+interface GreetingProps {
+  timeOfDay: string;
+}
 
+const Greeting = ({timeOfDay}: GreetingProps) => {
   return (
     <div>
-      <h1>Hello {name}</h1>
-      <p>{ date } {isMorning}</p>
+       {timeOfDay === "morning" ? <p>Good Morning</p> : timeOfDay === "afternoon" ? <p>Good Afternoon</p> : timeOfDay === "evening" ? <p>Good Evening</p> : <p>Hello</p>}
     </div>
-  );
-};
+  )
+}
 
-export default Greeting;
+export default Greeting
