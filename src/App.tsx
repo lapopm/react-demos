@@ -1,15 +1,16 @@
-import Greeting from "./components/Greeting";
-import UserStatus from "./components/UserStatus";
-import Weather from "./components/Weather";
+import IconComponent from "./components/IconComponent";
+import ProfileCard from "./components/ProfileCard";
+import StyledCard from "./components/StyledCard";
 
 function App() {
   return (
     <div>
-      <Weather />
-      <h1>===================</h1>
-      <UserStatus loggedIn={true} isAdmin={false} />
-      <h1>===================</h1>
-      <Greeting timeOfDay="morning" />
+      <StyledCard />
+
+      ==========================
+      <ProfileCard />
+      =======================
+      <IconComponent />
     </div>
   );
 }
