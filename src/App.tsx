@@ -1,16 +1,18 @@
-import IconComponent from "./components/IconComponent";
-import ProfileCard from "./components/ProfileCard";
-import StyledCard from "./components/StyledCard";
+import Counter from "./components/Counter";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
+import Todolist from "./components/Todolist";
 
 function App() {
   return (
     <div>
-      <StyledCard />
-
-      ==========================
-      <ProfileCard />
-      =======================
-      <IconComponent />
+      <Counter />
+      ===============
+      <Todolist />
+      ===============
+      <Profile />
+      ===============
+      <ShoppingList />
     </div>
   );
 }
