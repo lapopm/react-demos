@@ -1,18 +1,12 @@
-import Counter from "./components/Counter";
-import Profile from "./components/Profile";
-import ShoppingList from "./components/ShoppingList";
-import Todolist from "./components/Todolist";
 
+import FocusInput from "./components/basic/useRef/FocusInput";
+import Timer from "./components/basic/useRef/Timer";
+ 
 function App() {
   return (
     <div>
-      <Counter />
-      ===============
-      <Todolist />
-      ===============
-      <Profile />
-      ===============
-      <ShoppingList />
+      <FocusInput />
+      <Timer/>
     </div>
   );
 }
