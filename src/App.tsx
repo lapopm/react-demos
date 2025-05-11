@@ -1,12 +1,12 @@
-
-import FocusInput from "./components/basic/useRef/FocusInput";
-import Timer from "./components/basic/useRef/Timer";
+import Button from './components/ts-learn/Button'
  
 function App() {
+  const handleClick = () => {
+    console.log('Click is running')
+  }
   return (
     <div>
-      <FocusInput />
-      <Timer/>
+     <Button label="Click Me" onClick={handleClick} isDisabled={false}/>
     </div>
   );
 }
