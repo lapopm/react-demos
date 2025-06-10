@@ -1,11 +1,10 @@
 
-import EventHandling from "./components/ts-learn/EventHandling";
 
 function App() {
   return (
-    <div>
-      <EventHandling />
-    </div>
+      <div>
+       <button className="btn btn-primary">Button</button>
+      </div>
   );
 }
 
